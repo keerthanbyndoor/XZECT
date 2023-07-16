@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+     <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color :white;
+            font-family: 'Poppins', sans-serif;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .left{
+            
+        }
+        .logo img {
+            width: 50px; 
+            height: 50px;
+            margin-right: 10px; 
+        }
+        nav{
+            display:flex;
+            justify-content:space-around;
+            align-items: center;
+            background-color:rgb(18,18,62); 
+            height: 60px;
+        }
+        nav ul{
+            display: flex; 
+            justify-content: right;
+        }
+        nav ul li{
+            list-style:none;
+            margin: 0 23px;
+        } 
+        nav ul li a{
+           text-decoration: none;
+           color:white;
+        } 
+        nav ul li a:hover{
+          color:rgb(147, 147, 218);
+          font-size: 1.08rem;
+        }
+
+        .logo{
+            font-size: 1.5rem ;
+        }
+        .first{
+            display:flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+        .first div{
+            width:45%;
+        }
+        .leftsection{
+            margin:120px;
+            font-size: 3rem; 
+        }
+        .rightsection{
+           font-size: small;
+        }
+        .Build{
+            color: red;
+        }
+        .Test{
+            color:darkviolet;
+        }
+        .and{
+            color:darkgrey;
+        }
+        .exex{
+            color:blue;
+
+        }
+        .with{
+            color:darkgrey;
+        }
+        .inn{
+            color:greenyellow
+        }
+        .stop{
+            color:red;
+        }
+    
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .blinking-image {
+            animation: blink 1s infinite;
+        }
+        .second{
+            max-width:80%;
+            margin: auto  ;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px; /* Adjust the gap between columns */
+        }
+
+        .column {
+            background-color: grey;
+            height: 330px;
+            display:flex;
+            justify-content: center;
+            align-items: right;
+            width: 330px;
+            padding: 1rem;
+            border:1px solid;
+            border-radius:3px;
+            margin:1rem;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .our{
+            font-size: 4rem;
+            color:yellow
+        }
+        main hr{
+            border: 0;
+            height: 3px;
+            background-color: rgb(77, 77, 173);
+            margin: 80px 80px;
+        }
+        .serlist{
+            display:flex;
+
+        }
+        .undefined{
+            
+            width:200px;
+            flex:1.5;
+            background:rgb(0, 0, 33);
+            padding:1 rem;
+            padding: auto;
+            border:1px solid;
+            border-radius: 3px;
+            margin: 1rem;
+            color:black;
+            justify-content:space-around;
+            align-items: center;
+        overflow: hidden;
+        float:left;
+            text-decoration: none;
+        
+        }
+        .undefined h3{
+            margin-left: 8px;
+            margin-top: 6px;
+            font-size: larger;
+            color:white;
+            text-decoration:none;
+        }
+        .undefined p{
+            color:blue;
+            align-items: center;
+            justify-content:center;
+            margin-top: 8px;
+            margin-left: 120px;
+            text-decoration-line: 0;
+            
+        }
+        .undefined p:hover{
+            color:orange;
+          font-size: 1.08rem;
+
+        }
+        .undefined img {
+            transition: transform 0.3s ease;
+            display:flex;
+        }
+
+        .undefined:hover img {
+            transform: scale(1.05);
+        }
+        .serlist1{
+            display:flex;
+
+        }
+        .undefined1{
+            
+            width:200px;
+            flex:1.5;
+            background:rgb(0, 0, 33);
+            padding:1 rem;
+            padding: auto;
+            border:1px solid;
+            border-radius: 3px;
+            margin: 1rem;
+            color:black;
+            justify-content:space-around;
+            align-items: center;
+        overflow: hidden;
+        float:left;
+            text-decoration: none;
+        
+        }
+        .undefined1 h3{
+            margin-left: 8px;
+            margin-top: 6px;
+            font-size: larger;
+            color:white;
+            text-decoration:none;
+        }
+        .undefined1 p{
+            color:blue;
+            align-items: center;
+            justify-content:center;
+            margin-top: 8px;
+            margin-left: 120px;
+            text-decoration-line: 0;
+            
+        }
+        .undefined1 p:hover{
+            color:orange;
+          font-size: 1.08rem;
+
+        }
+        .undefined1 img {
+            transition: transform 0.3s ease;
+            display:flex;
+        }
+
+        .undefined1:hover img {
+            transform: scale(1.05);
+        }
+    
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .blinking-text {
+            animation: blink 1s infinite;
+            display: flex;
+            justify-content: center;
+            margin-left: 40px;
+            font-size: 4rem;
+            margin-bottom: 100px;
+            margin-top: -45px;
+        }
+    
+     </style>
+     </head>
+     <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="Company Logo"><h1>XZECT</h1>
+                    
+                </div>
+        
+        
+        <div class ="right">
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/services.html">Services</a></li>
+                <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+                <li><a href="http://127.0.0.1:5500/projects.html">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">ContactUs</a></li>
+            </ul>
+        </div>
+        </nav>
+        </header>
+        <main>
+            <section class="first">
+                <div class="leftsection">
+                   <span class="Build">Build,</span>
+                   <span class="Test">Test,</span> 
+                   <span class="and">and</span>
+                   <span class="exex">Execute your ideas</span>
+                   <span class="with">with our</span> 
+                   <span class="inn">Innovative solutions</span>
+                   <span class ="stop">.<br></br></span>
+                   <span id="element"></span>
+                </div>
+                <div class="rightsection">
+                    <img src="img/logo.png" alt="Blinking Image" width="80%" margin="50px" class="blinking-image">
+                    
+                </div> 
+            </section>
+            <hr>
+            <section class="second">
+                <div class="our">Our Services:</div>
+                <div class="serlist">
+                    <a class="undefined" href="https://www.xzect.com/services/software-and-app-development">
+                        <img src="img/img1new.jpeg">
+                        <h3>Software & App Development</h3>
+                        <p>Get Started</p>
+                    </a>
+                    <a class="undefined" href="https://www.xzect.com/services/website-development-and-seo">
+                        <img src="img/img2.jpeg">
+                        <h3>Website Development & SEO</h3>
+                        <p>Get Started</p>
+                    </a>
+                    <a class="undefined" href="https://www.xzect.com/services/cloud-services">
+                        <img src="img/img3.jpeg">
+                        <h3>Cloud Services</h3>
+                        <p>Get Started</p>
+                    </a>
+                   
+                </div>
+                <div class="serlist1">
+                    <a class="undefined1" href="https://www.xzect.com/services/3d-printing-and-prototyping">
+                        <img src="img/img4.jpeg">
+                        <h3>3D Printing & Prototyping </h3>
+                        <p>Get Started</p>
+                    </a>
+                    <a class="undefined1" href="https://www.xzect.com/services/data-science-and-analytics">
+                        <img src="img/img5.jpeg">
+                        <h3>Data Science & Analytics</h3>
+                        <p>Get Started</p>
+                    </a>
+                    <a class="undefined1" href="https://www.xzect.com/services/ai-and-machine-learning">
+                        <img src="img/img6.jpeg">
+                        <h3> AI & Machine Learning</h3>
+                        <p>Get Started</p>
+                    </a>
+                </div>     
+</section>
+<hr>
+<p class="blinking-text">Thank you for visiting!</p>
+        </main>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['Software &amp App Development', 'Website Development &amp SEO','Cloud Services','Robotics &amp Automation','3D Printing','Datascience','AI & Machine Learning','IOT,AR &VR','Block Chain'],
+              typeSpeed: 50,
+                loop:true
+
+            });
+            
+            
+ 
+            
+          </script>
+        
+     </body>
+</html> 
